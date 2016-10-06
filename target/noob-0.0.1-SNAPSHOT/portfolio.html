@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="baidu-site-verification" content="KSHvTlagci" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="阿里郎，阿里郎生鲜配送,大菜市阿里郎生鲜配送，大连大菜市阿里郎生鲜配送，大连大菜市，生鲜配送，大菜市，生鲜" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.useso.com/css?family=Oswald:400,700,300|Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+<!--//webfont-->
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+<script>
+	new WOW().init();
+</script>
+<!--Light-Box-->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<link rel="stylesheet" href="css/swipebox.css">
+<script src="js/jquery.swipebox.min.js"></script> 
+<script type="text/javascript">
+	jQuery(function($) {
+		$(".swipebox").swipebox();
+	});
+</script>
+<script>
+	function smell(){
+		var url = window.location.search
+		alert(url);
+		<span class="filter" data-filter="app" />
+	}
+	window.onload=smell();
+</script>
+<!--End-Light-Box-->
+<!--Script-for-gallery-Here-->
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		var filterList = {
+			init: function () {
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			},
+			hoverEffect: function () {
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);
+			}
+		};
+		// Run the show!
+		filterList.init();
+	});	
+</script>
+</head>
+<body>
+	<!-- header-section-starts -->
+	<div class="header box css3-shadow" id="head">
+	 	<div class="container">
+		  	<div class="header-top">
+		        <div class="logo wow bounceInLeft" data-wow-delay="0.4s">
+					<a href="index.html"><img src="images/logo.png" alt=""/></a>
+				</div>
+			    <div class="h_menu4"><!-- start h_menu4 -->
+					<a class="toggleMenu" href="#">Menu</a>
+					<ul class="nav">
+						<li class="active"><a href="index.html">首页</a></li>
+						<li><a href="service.html">服务理念</a></li>
+						<li><a href="structure.html">配送流程</a></li>
+						<li><a href="portfolio.html">产品展示</a></li>
+						<li><a href="contact.html">联系我们</a></li>
+					</ul>
+					<script type="text/javascript" src="js/nav.js"></script>
+				</div><!-- end h_menu4 -->
+				<div class="social_icons wow bounceInRight" data-wow-delay="0.4s">
+					<ul>
+						<li><image src="images/call1.png" alt=""/></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>				
+			</div><!-- end header_main4 -->
+		</div>
+	</div>
+
+	<!--start-portfolio-->
+	<div class="container">
+		<div class="gallery">
+		<!-- portfolio -->
+			<div class="portfolio-section" id="portfolio">			
+				<!-- head-section -->
+				<div class="head-section text-center">
+					<h2>产品展示</h2>
+				</div>
+				<!-- head-section -->
+				<ul id="filters" class="clearfix" wow bounceIn" data-wow-delay="0.4s">
+					<li><span class="filter" data-filter="app">猪肉类</span></li>
+					<li><span class="filter" data-filter="card">鸡肉类</span></li>
+					<li><span class="filter" data-filter="icon">鱼类</span></li>
+					<li><span class="filter" data-filter="logos">蔬菜类</span></li>
+					<li><span class="filter" data-filter="web">豆制品类</span></li>
+					<li><span class="filter" data-filter="jia">干调类</span></li>
+					<li><span class="filter" data-filter="duo">咸菜类</span></li>
+					<li><span class="filter" data-filter="bao">其他类</span></li>
+				</ul>
+				<div id="portfoliolist">
+					<!-- pig -->
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/pig1.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>前腿</p>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/pig2.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>排骨</p>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/pig3.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>猪五花</p>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/pig4.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>猪大肠</p>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/pig5.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>猪尾巴</p>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/pig6.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>猪排</p>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/pig7.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>猪排骨</p>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/pig8.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>猪肘</p>
+		                </div>
+					</div>		
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/pig9.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>猪蹄</p>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/pig10.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>精肉</p>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/pig11.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>猪耳朵</p>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/pig12.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>猪肋骨</p>
+		                </div>
+					</div>					
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/pig13.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>猪肋骨肉</p>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/pig14.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>猪腿肉</p>
+		                </div>
+					</div>
+					<!-- chicken -->
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/ck1.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>鸡头</p>
+		                </div>
+					</div>
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/ck2.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>鸡心</p>
+		                </div>
+					</div>					
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/ck3.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>鸡爪</p>
+		                </div>
+					</div>
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/ck4.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>鸡翅</p>
+		                </div>
+					</div>							
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/ck5.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>鸡翅根</p>
+		                </div>
+					</div>
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/ck6.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>鸡胗</p>
+		                </div>
+					</div>					
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/ck7.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>鸡脖</p>
+		                </div>
+					</div>
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/ck8.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>鸡腿</p>
+		                </div>
+					</div>					
+					<!-- fish -->
+					<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/fi1.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>刀鱼</p>
+		                </div>
+					</div>
+					<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/fi2.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>带鱼</p>
+		                </div>
+					</div>					
+					<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/fi3.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>沙丁鱼</p>
+		                </div>
+					</div>
+					<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/fi4.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>鱿鱼</p>
+		                </div>
+					</div>					
+					<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/fi5.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>黄花鱼</p>
+		                </div>
+					</div>
+					<!-- vegetable -->
+					<div class="portfolio logos mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/vg1.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>土豆</p>
+		                </div>
+					</div>
+					<div class="portfolio logos mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/vg2.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>大头菜</p>
+		                </div>
+					</div>
+					<div class="portfolio logos mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/vg3.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>大白菜</p>
+		                </div>
+					</div>
+					<div class="portfolio logos mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/vg4.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>油菜</p>
+		                </div>
+					</div>					
+					<div class="portfolio logos mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/vg5.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>油麦菜</p>
+		                </div>
+					</div>
+					<div class="portfolio logos mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/vg6.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>胡萝卜</p>
+		                </div>
+					</div>
+					<div class="portfolio logos mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/vg7.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>茼蒿</p>
+		                </div>
+					</div>
+					<div class="portfolio logos mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/vg8.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>菜花</p>
+		                </div>
+					</div>						
+					<div class="portfolio logos mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/vg9.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>西红柿</p>
+		                </div>
+					</div>
+					<div class="portfolio logos mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/vg10.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>豆芽</p>
+		                </div>
+					</div>
+					<div class="portfolio logos mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/vg11.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>豆角</p>
+		                </div>
+					</div>
+					<div class="portfolio logos mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/vg12.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>豇豆</p>
+		                </div>
+					</div>						
+					<div class="portfolio logos mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/vg13.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>黄瓜</p>
+		                </div>
+					</div>		
+					<!-- bean -->
+					<div class="portfolio web mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/dou1.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>内酯豆腐</p>
+		                </div>
+					</div>
+					<div class="portfolio web mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/dou2.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>千叶豆腐</p>
+		                </div>
+					</div>					
+					<div class="portfolio web mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/dou3.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>干豆腐</p>
+		                </div>
+					</div>
+					<div class="portfolio web mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/dou4.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>油皮卷</p>
+		                </div>
+					</div>						
+					<div class="portfolio web mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/dou5.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>豆腐</p>
+		                </div>
+					</div>
+					<div class="portfolio web mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/dou6.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>豆腐丝</p>
+		                </div>
+					</div>					
+					<div class="portfolio web mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/dou7.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>豆腐串</p>
+		                </div>
+					</div>
+					<div class="portfolio web mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/dou8.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>豆腐卷</p>
+		                </div>
+					</div>					
+					<div class="portfolio web mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/dou9.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>豆腐干</p>
+		                </div>
+					</div>
+					<div class="portfolio web mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/dou10.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>豆腐泡</p>
+		                </div>
+					</div>					
+					<!-- gantiao -->
+					<div class="portfolio jia mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="jia" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/gt.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>干调批发</p>
+		                </div>
+					</div>		
+					<!-- xiancai -->
+					<div class="portfolio duo mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="duo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/xc1.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>桔梗咸菜</p>
+		                </div>
+					</div>
+					<div class="portfolio duo mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="duo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/xc2.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>芥菜疙瘩丝</p>
+		                </div>
+					</div>					
+					<div class="portfolio duo mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="duo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/xc3.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>腌黄瓜</p>
+		                </div>
+					</div>					
+					<div class="portfolio duo mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="duo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/xc4.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>咸菜批发</p>
+		                </div>
+					</div>
+					<div class="portfolio duo mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="duo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/xc5.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>芥菜疙瘩</p>
+		                </div>
+					</div>					
+					<div class="portfolio duo mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="duo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/xc6.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>咸菜黄瓜</p>
+		                </div>
+					</div>		
+					<!-- other -->
+					<div class="portfolio bao mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="bao" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/ot1.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>冷面</p>
+		                </div>
+					</div>
+					<div class="portfolio bao mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="bao" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <img src="images/ot2.jpg" class="img-responsive" alt=""><span class="zoom-icon"> </span>
+							 <p>凉皮</p>
+		                </div>
+					</div>					
+					<div class="clearfix"> </div>					
+				</div>			
+			<div class="clearfix"></div>	
+			</div>
+		</div>
+	</div>
+					<!--/start-footer-section-->
+			<div class="footer-section">
+				<div class="container">
+					<div class="footer-grids wow bounceIn animated" data-wow-delay="0.4s">
+						<div class="col-md-3 footer-grid">
+							  <p>公司： 大连阿里郎生鲜配送中心</p>
+						</div>
+						<div class="col-md-4 footer-grid">
+							  <p>地址： 辽宁省大连市西岗区双兴街17-9号</p>
+						</div>
+						<div class="col-md-2 footer-grid">
+							  <p>联系人： 郎女士</p>
+						</div>
+						<div class="col-md-3 footer-grid">
+							  <p>电话：     13322270281</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+			</div>
+		</div>
+	<!--//end-footer-section-->
+<!--/start-copyright-section-->
+	<div class="copyright">
+		<div class="container">
+			<div class="logo2 wow bounceInLeft" data-wow-delay="0.4s">
+				<a href="index.html">
+					<img src="images/logo2.png" alt=""/ title="logo" />
+				</a>
+			</div>
+			<div><p class="write wow bounceInRight" data-wow-delay="0.4s">Copyright &copy; 2016.SN Ltd. All rights reserved.</p></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<!--end-copyright-section-->
+			<!--start-smoth-scrolling-->
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){		
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+								</script>
+							<!--start-smoth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#head" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+			
+</body>
+</html>
